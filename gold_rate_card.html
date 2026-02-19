@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Jewellers - Daily Rates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark: #1a1a1a;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Container with Background Image - 1080x1080 (1:1) */
+        .rate-card {
+            width: 1080px;
+            height: 1080px;
+            background: url('pj_bg.png') no-repeat center center;
+            background-size: cover;
+            /* border: 17px solid var(--gold); */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 97px;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+        }
+
+        /* Shop Header */
+        .header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 60px;
+            margin: 22px 0 11px 0;
+            color: white;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+        }
+        .header {
+            margin-top: 22px;
+        }
+        .address {
+            font-size: 26px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px black;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        /* Central White Overlay */
+        .overlay-box {
+            background: rgba(255, 255, 255, 0.9);
+            width: 75%;
+            padding: 54px;
+            border-radius: 11px;
+            color: var(--dark);
+            box-shadow: 0 11px 32px rgba(0,0,0,0.3);
+        }
+
+        .price-row {
+            margin-bottom: 43px;
+        }
+        .price-row:last-child { margin-bottom: 0; }
+
+        .label {
+            font-size: 30px;
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+        }
+        .price {
+            font-size: 69px;
+            font-weight: 900;
+            color: #8b6d11;
+            margin-top: 11px;
+        }
+
+        /* Footer Info */
+        .footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+        .disclaimer {
+            font-size: 19px;
+            font-weight: normal;
+            margin-top: 11px;
+        }
+        .bottom-container {
+            margin-top: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="rate-card">
+    <div class="header">
+        <h1>PRADEEP JEWELLERS</h1>
+        <div class="address">Chokshi Bazar, Santh Bazar Road, Nadiad</div>
+    </div>
+
+    <div class="overlay-box">
+        <div class="price-row">
+            <div class="label">Today's Gold Rate (22KT 1g)</div>
+            <div class="price">₹ 14,306.90</div>
+        </div>
+        <div class="price-row">
+            <div class="label">Today's Silver Rate (100g)</div>
+            <div class="price">₹ 24,705.10</div>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <div class="footer">
+            <span>📞 9426560628</span>
+            <span>19 FEB 2026</span>
+        </div>
+        <div class="footer" style="margin-top:11px; justify-content: center; gap: 43px;">
+            <span>pradeepjewellers.in</span>
+            <span>@pradeep_jewellers_nadiad</span>
+        </div>
+        <div class="disclaimer">
+            Rates are indicative. Confirm at booking. GST & Making extra.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
