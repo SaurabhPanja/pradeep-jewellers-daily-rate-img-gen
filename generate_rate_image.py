@@ -26,9 +26,9 @@ def generate_image(output_path: Optional[Path] = None) -> bool:
         print("Error: Could not extract rates.")
         return False
 
-    gold_1g = gold_22k_10g / 10
-    silver_100g = silver_1kg / 10
-    update_rate_card(gold_1g, silver_100g, script_dir)
+    gold_1g = round(gold_22k_10g / 10 / 100) * 100
+    silver_1kg = round(silver_1kg  / 100) * 100
+    update_rate_card(gold_1g, silver_1kg, script_dir)
 
     try:
         from playwright.sync_api import sync_playwright
